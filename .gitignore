@@ -1,0 +1,139 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+
+                                        // Frontend //
+# dependencies
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.*
+/frontend/.yarn/*
+/frontend/!.yarn/patches
+/frontend/!.yarn/plugins
+/frontend/!.yarn/releases
+/frontend/!.yarn/versions
+
+# testing
+/frontend/coverage
+
+# next.js
+/frontend/.next/
+/frontend/out/
+
+# production
+/frontend/build
+
+# misc
+/frontend/.DS_Store
+/frontend/*.pem
+
+# debug
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# env files (can opt-in for committing if needed)
+/frontend/.env*
+
+# vercel
+/frontend/.vercel
+
+# typescript
+/frontend/*.tsbuildinfo
+/frontend/next-env.d.ts
+
+#                                            //  Backend  //
+
+# Logs
+/backend/logs/
+*.log
+/backend/npm-debug.log*
+/backend/yarn-debug.log*
+/backend/yarn-error.log*
+
+# Runtime data
+/backend/pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Dependencies
+/backend/node_modules/
+.backend/.pnp
+.backend/.pnp.*
+/backend/__pycache__/
+*.py[cod]
+*.so
+
+# Environment files
+/backend/.env
+/backend/.env.*.local
+
+# Build artifacts
+/backend/build/
+.backend/dist/
+.backend/.out/
+.backend/coverage/
+.backend/*.tsbuildinfo
+
+# Temporary files and directories
+/backend/tmp/
+.backend/temp/
+.backend/.cache/
+*.swp
+*.swo
+
+# Database
+/backend/*.sqlite3
+.backend/*.db
+.backend/*.sql
+/backend/*.db-journal
+
+# Secrets
+/backend/*.pem
+/backend/*.key
+
+# Docker
+/backend/docker-compose.override.yml
+.backend/.dockerignore
+/backend/docker-compose.logs
+
+# Kubernetes
+/backend/*.yaml
+/backend/*.yml
+
+# IDE and OS-specific files
+/.vscode/
+.idea/
+.DS_Store
+*.iml
+Thumbs.db
+
+# Testing and coverage
+/backend/coverage/
+.backend/.jest/
+.backend/.nyc_output/
+
+# Debug
+/backend/debug/
+*.log
+/backend/logs/
+
+# Static assets (optional)
+.backend/public/uploads/
+.backend/static/assets/
+
+# CI/CD
+/.github/workflows/*.log
+/backend/terraform.tfstate
+/backend/terraform.tfstate.backup
+*.terraform.lock.hcl
+.backend/.terraform/
+
+# Third-party
+/backend/vendor/
+.backend/bower_components/
+
+# Custom rules
+/backend/custom_logs/
+.backend/custom_temp/
+
